@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container-music">
+    <h1 id="nomeAutor">AC/DC</h1>
+    <h2 id="nomeMusica">Back in Black</h2>
+    <img id="imagemMusica" src="./assets/musica/ac-dc.jpg" alt="Imagem banda AC/DC">
+    <div class="controle-music">
+      <audio id="audio">
+        <source src="./assets/musica/ACDC - Back In Black (Official Music Video).mp3" type="audio/mpeg">
+      </audio>
+      <div id="controles">
+        <img class="botao" onclick="retroceder()" src="./assets/btn/retroceder.png" alt="Botão retroceder música">
+        <img class="botao" onclick="iniciar()" src="./assets/btn/play.png" alt="Botão iniciar e pausar a música">
+        <img class="botao" onclick="pausar()" src="./assets/btn/pause.png" alt="Botão iniciar e pausar a música">
+        <img class="botao" onclick="avancar()" src="./assets/btn/avançar.png" alt="Botão avançar música">
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
