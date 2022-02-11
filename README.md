@@ -26,6 +26,8 @@
 #### Gif da página aplicação audio-player
 ![audio-player](https://user-images.githubusercontent.com/68918326/153607165-e9626dec-aa1e-4997-92c0-072553a8aba2.gif)
 
+#### Link Git Pages
+<a href="https://romulo-sobrinho.github.io/audio-player-JS/">Link Audio-Player</a>
 
 <hr>
 <h3 align="center">🚧PÁGINA EM CONSTRUÇÃO🚧</h3>
