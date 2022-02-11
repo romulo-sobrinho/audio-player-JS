@@ -37,6 +37,11 @@ body {
   box-shadow: 0 0 5rem #0010a4;
 }
 
+.container-music:hover {
+  box-shadow: 0 0 2rem #FFF;
+  filter: drop-shadow(0 0 1px #FFF);
+}
+
 #nomeAutor {
   font-size: 2.5rem;
   font-weight: bold;
@@ -44,11 +49,21 @@ body {
   text-shadow: 0 0 10px #0010a4, 0 0 20px #0010a4, 0 0 40px #0010a4, 0 0 80px #0010a4, 0 0 160px #0010a4;
 }
 
+#nomeAutor:hover {
+  text-shadow: 0 0 10px #0010a4;
+  filter: drop-shadow(0 0 1px #FFF);
+}
+
 #nomeMusica {
   font-size: 1rem;
   font-weight: bold;
-  color: white;
+  color: #FFFFFF;
   text-shadow: 0 0 10px #0010a4, 0 0 20px #0010a4, 0 0 40px #0010a4, 0 0 80px #0010a4, 0 0 160px #0010a4;
+}
+
+#nomeMusica:hover {
+  text-shadow: 0 0 10px #0010a4;
+  filter: drop-shadow(0 0 1px #FFF);
 }
 
 #imagemMusica {
@@ -58,6 +73,13 @@ body {
   animation: girar 10s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  transition: all 0.4s;
+}
+
+#imagemMusica:hover {
+  animation: girarReverso 20s;
+  animation-timing-function: linear;
+  filter: drop-shadow(0 0 10px #FFF);
 }
 
 #controles {
@@ -65,9 +87,9 @@ body {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 0.5rem;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.6rem;
 }
 
 .botao {
@@ -81,6 +103,15 @@ body {
 .botao:hover {
   animation: expandir 0.8s;
   animation-fill-mode: forwards;
+  filter: drop-shadow(0 0 5px #FFF);
+}
+
+.botao-play, .botao-pause {
+  width: 6rem;
+}
+
+.botao-pause {
+  display: none;
 }
 
 @keyframes girar {
@@ -93,12 +124,22 @@ body {
   }
 }
 
+@keyframes girarReverso {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(-180deg);
+  }
+}
+
 @keyframes expandir {
   0% {
     transform: scale(100%);
   }
 
   100% {
-    transform: scale(125%);
+    transform: scale(120%);
   }
 }
