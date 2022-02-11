@@ -15,6 +15,10 @@ function iniciar() {
   audio.play();
   play.style.display = "none";
   pause.style.display = "inline";
+  pause.style.animationName = "expandir";
+  pause.style.animationDuration = "1s";
+  pause.style.animationIterationCount = "infinite";
+  pause.style.animationTimingFunction = "linear";
 }
 
 function pausar() {

@@ -24,7 +24,7 @@
 ## Preview
 
 #### Gif da página aplicação audio-player
-![audio-player](https://user-images.githubusercontent.com/68918326/153509164-8d9227e8-4cd3-41e0-9ec9-8e66b6108fa7.gif)
+![audio-player](https://user-images.githubusercontent.com/68918326/153607165-e9626dec-aa1e-4997-92c0-072553a8aba2.gif)
 
 
 <hr>
